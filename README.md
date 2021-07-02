@@ -13,7 +13,7 @@ pip install schedules
 
 Here is a simple timer scheduled task example.
 
-After 1 hour, 30 minutes and 10 seconds `task` will execute.
+After 3 days, 1 hour, 30 minutes and 10 seconds `task` will execute.
 
 ```python
 import schedules

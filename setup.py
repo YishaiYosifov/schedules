@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 setup(
     name = "schedules",
     packages = ["schedules"],
-    version = "1.1",
+    version = "1.2",
     license = "MIT",
     description = "Create non-blocking scheduled tasks.",
     long_description = LongDescription,
