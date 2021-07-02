@@ -17,7 +17,7 @@ class timer():
         Target(*Args)
         if Repeat:
             threading.Thread(target=self.__task, args=(Sleep, Target, Args, Repeat)).start()
-    def seconds(self, Seconds : int):
+    def second(self, Seconds : int):
         """
         Set the seconds
         """
@@ -25,7 +25,7 @@ class timer():
             raise TypeError("the seconds must be an integer!")
         self.__seconds = Seconds
         return self
-    def minutes(self, Minutes):
+    def minute(self, Minutes):
         """
         Set the minutes
         """
@@ -33,7 +33,7 @@ class timer():
             raise TypeError("the minutes must be an integer!")
         self.__minutes = Minutes
         return self
-    def hours(self, Hours):
+    def hour(self, Hours):
         """
         Set the hours
         """
@@ -41,7 +41,7 @@ class timer():
             raise TypeError("the hours must be an integer!")
         self.__hours = Hours
         return self
-    def days(self, Days):
+    def day(self, Days):
         """
         Set the days
         """

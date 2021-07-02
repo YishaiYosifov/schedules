@@ -30,9 +30,9 @@ timer = schedules.timer()
 # Start the timer.
 
 # "repeat=True" means the task not execute only once,
-# it will execute every 1 hour, 30 minutes and 10 seconds infinite times.
+# it will execute every 3 days, 1 hour, 30 minutes and 10 seconds infinite times.
 
-timer.hours(1).minutes(30).seconds(10).start(target=task, args=("Example",), repeat=True)
+timer.day(3).hour(1).minute(30).second(10).start(target=task, args=("Example",), repeat=True)
 
 # NOTE:
 # Because this package is non-blocking, the thread will continue.
