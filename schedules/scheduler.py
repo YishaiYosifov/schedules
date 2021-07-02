@@ -4,7 +4,7 @@ import re
 from .Errors import Errors
 from datetime import datetime
 class timer():
-    def start(self, *, target, args, repeat=False):
+    def start(self, *, target, args=(), repeat=False):
         """
         Start a scheduled task
         """
@@ -50,7 +50,7 @@ class timer():
         self.__days = Days
         return self
 class every():
-    def start(self, *, target, args, repeat=False):
+    def start(self, *, target, args=(), repeat=False):
         if not isinstance(args, tuple):
             raise TypeError("The args must be a tuple!")
         self.__dict__ = {re.sub(f"_{self.__class__.__name__}__", "", Key) : Value for Key, Value in self.__dict__.items()}
